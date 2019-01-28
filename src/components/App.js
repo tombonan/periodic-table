@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import './Main.css';
 
 class App extends Component {
   render() {
     return (
-        <div className="App">
+        <div className="wrapper">
           <h1>Periodic Table of Elements</h1>
+          <div className = "table">
+            <div className = "element element-1">
+            </div>
+            <div className = "element element-2">
+            </div>
+          </div>
       </div>
     );
   }
