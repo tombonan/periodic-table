@@ -55,25 +55,25 @@ table {
 
 @font-face {
     font-family: FivoSans;
-    font-weight: normal;
+    font-weight: 300;
     src: url("FivoSans-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: FivoSans;
-    font-weight: medium;
+    font-weight: 400;
     src: url("FivoSans-Medium.otf") format("opentype");
 }
 
 @font-face {
     font-family: FivoSans;
-    font-weight: bold;
+    font-weight: 500;
     src: url("FivoSans-Bold.otf") format("opentype");
 }
 
 @font-face {
     font-family: FivoSans;
-    font-weight: heavy;
+    font-weight: 600;
     src: url("FivoSans-Heavy.otf") format("opentype");
 }
 
@@ -90,7 +90,7 @@ body {
 
 h1 {
     font-family: FivoSans;
-    font-weight: heavy;
+    font-weight: 600;
     font-size: 38px;
     color: #444;
     margin-top: 14px;
@@ -150,7 +150,7 @@ h1 {
 
 .symbol {
     font-family: FivoSans;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 2vw;
     color: #444;
     text-align: center;
@@ -182,15 +182,39 @@ h1 {
 }
 
 .element-58, .element-90 {
-    grid-column-start: 6; 
+    grid-column-start: 5; 
 }
 
-.element-58, .element-59, .element-60, .element-61, .element-62, .element-63, .element-64, .element-65, .element-66, .element-67, .element-68, .element-69, .element-70 {
+.element-58, .element-59, .element-60, .element-61, .element-62, .element-63, .element-64, .element-65, .element-66, .element-67, .element-68, .element-69, .element-70, .element-71 {
     margin-top: 40px;
 }
 
 /* --- pop-up box --- */
-.info {
+.info-box {
+  grid-column: 3/5;
+  grid-row: 2/4;
+  margin: 0;
+  padding: 0.2vw;
+  overflow: hidden;
+  border-top: 1px solid #444;
+}
+
+.info-box h1 {
+    font-family: FivoSans;
+    font-weight: 500;
+    font-size: 4vw;
+    color: #444;
+    text-align: center;
+    line-height: 7.6vw;
+}
+
+.info-box h2 {
+    float: left;
+    font-size: 0.9vw;
+    position: absolute;
+}
+
+.info{
   grid-column: 5/13;
   grid-row: 2/4;
   padding: 0.5vw;
@@ -198,4 +222,23 @@ h1 {
   font-size: 1vw;
   max-height: 10vw;
   overflow: scroll;
+  border: 1px solid #444;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    color: #737373;
+    padding-top: 1vw;
+}
+
+.close:hover {
+    color: #444;
+}
+
+.info h1 {
+    font-family: FivoSans;
+    font-weight: 500;
+    font-size: 2.2vw;
+    color: #444;
 }
