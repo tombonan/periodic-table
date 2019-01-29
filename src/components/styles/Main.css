@@ -55,12 +55,27 @@ table {
 
 @font-face {
     font-family: FivoSans;
+    font-weight: medium;
+    src: url("FivoSans-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FivoSans;
     font-weight: bold;
+    src: url("FivoSans-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FivoSans;
+    font-weight: heavy;
     src: url("FivoSans-Heavy.otf") format("opentype");
 }
 
 
 /* --- App --- */
+* {
+  box-sizing: border-box;
+}
 
 body {
     background: #fdf5de;
@@ -69,7 +84,7 @@ body {
 
 h1 {
     font-family: FivoSans;
-    font-weight: bold;
+    font-weight: heavy;
     font-size: 30px;
     color: #444;
 }
@@ -77,12 +92,19 @@ h1 {
 .wrapper {
   width: 90%;
   margin: 0 auto;
-  max-width: 1700px;
 }
 
 .table {
   display: grid;
   grid-template-columns: repeat(17, auto) 1fr;
+}
+
+.alkalai {
+    background: #d6d1be;
+}
+
+.noble {
+    background: #fe808e;
 }
 
 
@@ -98,6 +120,43 @@ h1 {
   overflow: hidden;
 }
 
+.symbol {
+    font-family: FivoSans;
+    font-weight: bold;
+    font-size: 2vw;
+    color: #444;
+    text-align: center;
+    line-height: 5vw;
+}
+
+.number {
+    float: left;
+    font-size: 0.6vw;
+    position: absolute;
+}
+
+
 .element-2 {
   grid-column-start: -2;
+}
+
+.element-5, .element-13 {
+  grid-column-start: 13;
+}
+
+.element-58, .element-90 {
+    grid-column-start: 3;
+}
+
+
+.element-72, .element-104 {
+    grid-column-start: 4;
+}
+
+.element-119 {
+  grid-column-start: -2;
+}
+
+.hover {
+    background: #fe808e;
 }
