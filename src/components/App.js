@@ -32,7 +32,7 @@ class App extends Component {
                                      );
     return (
         <div className="wrapper">
-          <h1>Periodic Table of Elements</h1>
+          <h1>Periodic Table of Elements<span id = "small"> [<a href="https://github.com/tombonan/periodic-table" target="_blank">source code</a>]</span></h1>
           <div className = "table">
             { elements }
             {this.state.visible ? (
@@ -40,6 +40,7 @@ class App extends Component {
                   <div className = {`info-box ${this.state.activeElement[0].category}`}>
                     <h2>{this.state.activeElement[0].number}</h2>
                     <h1>{this.state.activeElement[0].symbol}</h1>
+                    <h3>{this.state.activeElement[0].name}</h3>
                   </div>
                   <div className = "info">
                     <div
@@ -48,6 +49,13 @@ class App extends Component {
                       [&times;]
                     </div>
                     <h1>{this.state.activeElement[0].name}</h1>
+                    <h3><span id = "bold">Appearance</span>: {this.state.activeElement[0].appearance != null ? this.state.activeElement[0].appearance : "N/A"}</h3>
+                    <h3><span id = "bold">Atomic Mass</span>: {this.state.activeElement[0].atomic_mass.toFixed(2)} |
+                      <span id = "bold"> Density</span>: {this.state.activeElement[0].density.toFixed(2)} |
+                <span id = "bold"> Molar Heat</span>: {this.state.activeElement[0].molar_heat != null ? this.state.activeElement[0].molar_heat.toFixed(2) : "N/A"}
+                    </h3>
+                    <h3><span id = "bold">Melting Point</span>: {this.state.activeElement[0].melt != null ? this.state.activeElement[0].melt + "K" : "N/A"} |
+                <span id ="bold"> Boiling Point</span>: {this.state.activeElement[0].boil != null ? this.state.activeElement[0].boil + "K" : "N/A"}</h3>
                   </div>
                 </Fragment>
         )

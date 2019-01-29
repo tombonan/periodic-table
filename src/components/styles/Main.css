@@ -91,10 +91,21 @@ body {
 h1 {
     font-family: FivoSans;
     font-weight: 600;
-    font-size: 38px;
+    font-size: 2vw;
     color: #444;
     margin-top: 14px;
     margin-bottom: 14px;
+}
+
+#small, #small a {
+    font-size: 1vw;
+    font-weight: 200;
+    text-decoration: none;
+    color: #2cacc5;
+}
+
+#small a:hover {
+    color: #444;
 }
 
 .wrapper {
@@ -169,7 +180,7 @@ h1 {
     font-size: 0.7vw;
     color: #444;
     text-align: center;
-    margin-top: -22px;
+    margin-top: -1.6vw;
 }
 
 
@@ -205,13 +216,22 @@ h1 {
     font-size: 4vw;
     color: #444;
     text-align: center;
-    line-height: 7.6vw;
+    line-height: 7.4vw;
 }
 
 .info-box h2 {
     float: left;
     font-size: 0.9vw;
     position: absolute;
+}
+
+.info-box h3 {
+    font-family: FivoSans;
+    font-weight: 200;
+    font-size: 1vw;
+    color: #444;
+    text-align: center;
+    margin-top: -2.4vw;
 }
 
 .info{
@@ -241,4 +261,16 @@ h1 {
     font-weight: 500;
     font-size: 2.2vw;
     color: #444;
+}
+
+.info h3 {
+    font-family: FivoSans;
+    font-weight: 300;
+    font-size: 1vw;
+    color: #444;
+    margin-bottom: 0.5vw;
+}
+
+#bold {
+    font-weight: 500 !important;
 }
