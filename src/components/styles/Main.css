@@ -49,6 +49,12 @@ table {
 
 @font-face {
     font-family: FivoSans;
+    font-weight: 200;
+    src: url("FivoSans-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FivoSans;
     font-weight: normal;
     src: url("FivoSans-Regular.otf") format("opentype");
 }
@@ -85,8 +91,10 @@ body {
 h1 {
     font-family: FivoSans;
     font-weight: heavy;
-    font-size: 30px;
+    font-size: 38px;
     color: #444;
+    margin-top: 14px;
+    margin-bottom: 14px;
 }
 
 .wrapper {
@@ -99,12 +107,32 @@ h1 {
   grid-template-columns: repeat(17, auto) 1fr;
 }
 
-.alkalai {
+.alkali {
     background: #d6d1be;
 }
 
 .noble {
     background: #fe808e;
+}
+
+.transition, .lanthanide, .actinide {
+    background: #ffdd00;
+}
+
+.nonmetal {
+    background: #f59723;
+}
+
+.metalloid, .post-transition {
+    background: #2cacc5;
+}
+
+.alkaline {
+    background: #36b872;
+}
+
+.element:hover {
+    background: #f4f9f4;
 }
 
 
@@ -135,6 +163,15 @@ h1 {
     position: absolute;
 }
 
+.name {
+    font-family: FivoSans;
+    font-weight: 200;
+    font-size: 0.7vw;
+    color: #444;
+    text-align: center;
+    margin-top: -22px;
+}
+
 
 .element-2 {
   grid-column-start: -2;
@@ -145,18 +182,20 @@ h1 {
 }
 
 .element-58, .element-90 {
-    grid-column-start: 3;
+    grid-column-start: 6; 
 }
 
-
-.element-72, .element-104 {
-    grid-column-start: 4;
+.element-58, .element-59, .element-60, .element-61, .element-62, .element-63, .element-64, .element-65, .element-66, .element-67, .element-68, .element-69, .element-70 {
+    margin-top: 40px;
 }
 
-.element-119 {
-  grid-column-start: -2;
-}
-
-.hover {
-    background: #fe808e;
+/* --- pop-up box --- */
+.info {
+  grid-column: 5/13;
+  grid-row: 2/4;
+  padding: 0.5vw;
+  padding-top: 0;
+  font-size: 1vw;
+  max-height: 10vw;
+  overflow: scroll;
 }
