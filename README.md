@@ -11,3 +11,6 @@ npm install
 npm start
 ```
 
+## Live demo
+A live demo of the app is deployed to Heroku and can be [viewed here](https://nameless-ravine-55497.herokuapp.com/)
+
